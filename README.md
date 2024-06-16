@@ -11,7 +11,7 @@ Parcel uses : file watching algorithm - which is written in c++
 Faster builds : due to caching
 Image optimization for faster loading of images
 Bundle of files
-Minify and compres the files
+Minify and compress the files
 Consistent hashing
 Code Splitting
 Differential Bundling to support older browsers
@@ -50,6 +50,7 @@ JSX handles the Cross Site Scripting and escapes all these javascript executons
 - - LINKS
 
 # React Hooks
+
 They are normal JS functions utility functions written by Meta Developers
 
 1.  useState()
@@ -76,3 +77,16 @@ Alogrithm is the diff between the two javascript objects
 
 React is doing the efficient DOM manipulation
 Why React is Fast because it doesn't touch the Actual DOM it just find the difference and then touch the actual DOM
+
+useEffect as soon as the render cycle is complete it will call the useEffect callback function
+
+Whenever a localState variable is updates reconcialitaiton algo is called again and rerendering the component again
+
+# Router
+
+Two type of routing in web application
+
+1. Client side routing - new way of routing
+2. Server side routing - Like OLd way of routing
+
+Dynamic Routing for different restaurants

@@ -47,7 +47,36 @@
   justify-content: space-between;
   border: 1px solid black;
 }
-.filter-btn{
+.filter-btn {
   border: 1px solid black;
   cursor: pointer;
+}
+
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.shimmer-card {
+  width: 250px;
+  height: 544px;
+  background-color: antiquewhite;
+  padding: 5px;
+  margin: 5px;
+}
+
+.login-btn {
+  border: 1px solid black;
+  cursor: pointer;
+  padding: 5px;
+  margin: 5px;
+}
+
+.user-card {
+  width: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: antiquewhite;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid black;
 }
