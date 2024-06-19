@@ -13,9 +13,10 @@ Image optimization for faster loading of images
 Bundle of files
 Minify and compress the files
 Consistent hashing
-Code Splitting
+Code Splitting - Chunking of huge js files into smaller chunks
+Dynamic bundling of smaller applications
 Differential Bundling to support older browsers
-Diagnostign behind the scenes for error messages and optimization
+Diagnosting behind the scenes for error messages and optimization
 Also provides support for hosting on HTTPS instead of http
 Tree Shaking algorithm - remove unused code or functions if not used
 different DEV and PROD BUILD
@@ -90,3 +91,24 @@ Two type of routing in web application
 2. Server side routing - Like OLd way of routing
 
 Dynamic Routing for different restaurants
+
+# CSS or styling libraries
+
+Material UI
+chakra UI
+styled components
+tailwind styled components
+Ant Design -> React 2nd most popular
+
+# How to manange the data inside the react applications
+
+Higher Order Components
+-takes a component and enhance it and return a component
+-Promoted restaurants in the restro card in the swiggy
+-take a restaurant component and enhance it with promoted and return
+
+# React Layers
+
+Data Layer - State , Data, Props, Local Variables and JS Codes
+UI is powered by Data Layer
+Major part is two handle the Data Layer

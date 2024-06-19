@@ -11,14 +11,14 @@ class UserClass extends React.Component {
     //console.log(this.props.name + "Child constructor: UserClass");
   }
   componentDidMount() {
-    this.timer = setInterval(() => {
-      console.log("InervalCalled");
-    }, 1000);
+    // this.timer = setInterval(() => {
+    //   console.log("InervalCalled");
+    // }, 1000);
   }
 
   componentDidUpdate() {}
   componentWillUnmount() {
-    clearInterval(this.timer);
+    //clearInterval(this.timer);
     //to clear some clearing like the interval or somethig like that
   } //
   render() {

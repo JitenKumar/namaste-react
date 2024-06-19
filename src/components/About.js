@@ -1,5 +1,5 @@
 import React from "react";
-import UserClass from "./UserClass";
+import User from "./User.js";
 // export const About = () => {
 //   return (
 //     <div className="about">
@@ -40,7 +40,7 @@ class About extends React.Component {
     //console.log("Parent Render: About");
     return (
       <div className="about">
-        <UserClass name={"First Child"} location={"Delhi Class"} />
+        <User name={"First Child"} location={"Delhi Class"} />
       </div>
     );
   }
