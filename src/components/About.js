@@ -31,7 +31,7 @@ class About extends React.Component {
     this.state = {};
     //console.log("Parent constructor: About");
   }
-  async componentDidMount() {
+  componentDidMount() {
     //Why is this required? Because the component is
     //already mounted and data can be fetched now for rerender
     //console.log("Parent componentDidMount: About");

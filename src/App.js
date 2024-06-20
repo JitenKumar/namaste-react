@@ -9,6 +9,9 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import RestaurantMenu from "./components/RestaurantMenu.js";
 import Shimmer from "./components/Shimmer.js";
 import UserContext from "./utils/UserContext.js";
+import { Provider } from "react-redux";
+import appStore from "./utils/appstore.js";
+import Cart from "./components/Cart.js";
 //ondemand loading
 //chunking
 //Dynamic bundling
@@ -31,15 +34,17 @@ const App = () => {
     setLoggedInUser(data.loggedInUser);
   });
   return (
-    <UserContext.Provider
-      value={{ loggedInUser: loggedInUser, setLoggedInUser }}
-    >
-      <div className="app">
-        <Header />
-        <Outlet />
-        <Footer />
-      </div>
-    </UserContext.Provider>
+    <Provider store={appStore}>
+      <UserContext.Provider
+        value={{ loggedInUser: loggedInUser, setLoggedInUser }}
+      >
+        <div className="app">
+          <Header />
+          <Outlet />
+          <Footer />
+        </div>
+      </UserContext.Provider>
+    </Provider>
   );
 };
 
@@ -72,6 +77,7 @@ const appRouter = createBrowserRouter([
           </Suspense>
         ),
       },
+      { path: "/cart", element: <Cart /> },
       {
         path: "/restaurants/:resId",
         element: <RestaurantMenu />,

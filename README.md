@@ -112,3 +112,24 @@ Higher Order Components
 Data Layer - State , Data, Props, Local Variables and JS Codes
 UI is powered by Data Layer
 Major part is two handle the Data Layer
+
+# Data Store Libraries
+
+# Redux Toolkit
+
+Install reduxjstoolkit
+Install reactredux
+Connect our store the application
+create the Cart Slice
+dispatch(action)
+selector for read operations
+React and Reduct are separate libraries
+
+1. Redux
+2. Zustand
+
+Redux Architecure
+
+- Slice of big store
+  - When any action to update the store -> dispatch an action -> action will then and call a function(reducerFunction) to update the cart slice
+  - When reading the data from the store -> use a selector and then -> Mean a component is subscribed to the store for data reading process
